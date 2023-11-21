@@ -30,66 +30,73 @@ let monthlyTasks = [
 
 struct ContentView: View {
     var body: some View {
-        List {
-            Section(header: HStack(alignment: .bottom) {
-                Text(Image(systemName: "moon.stars"))
-                    .font(.title3)
-                    .fontWeight(.heavy)
-                    .foregroundStyle(.yellow)
+        NavigationView {
+            List {
+                Section(header: HStack(alignment: .bottom) {
+                    Text(Image(systemName: "moon.stars"))
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.yellow)
+                    
+                    Text("Nightly Tasks")
+                        .underline()
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.yellow)
+                        .padding(.top)
+                        .textCase(.uppercase)
+                }) {
+                    ForEach(nightlyTasks, id: \.self, content: {
+                        taskName in
+                        NavigationLink(taskName, destination: VStack {
+                            Text(taskName)
+                            Text("Placeholder despription")
+                            Text("Placeholder mark button")
+                        })
+                    })
+                }
                 
-                Text("Nightly Tasks")
-                    .underline()
-                    .font(.title3)
-                    .fontWeight(.heavy)
-                    .foregroundStyle(.yellow)
-                    .padding(.top)
-                    .textCase(.uppercase)
-            }) {
-                ForEach(nightlyTasks, id: \.self, content: {
-                    taskName in
-                    Text(taskName)
-                })
-            }
-            
-            Section(header: HStack(alignment: .bottom) {
-                Text(Image(systemName: "sunset"))
-                    .font(.title3)
-                    .fontWeight(.heavy)
-                    .foregroundStyle(.yellow)
+                Section(header: HStack(alignment: .bottom) {
+                    Text(Image(systemName: "sunset"))
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.yellow)
+                    
+                    Text("Weekly Tasks")
+                        .underline()
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.yellow)
+                        .padding(.top)
+                        .textCase(.uppercase)
+                }) {
+                    ForEach(weeklyTasks, id: \.self, content: {
+                        taskName in
+                        NavigationLink(taskName, destination: Text(taskName))
+                    })
+                }
                 
-                Text("Weekly Tasks")
-                    .underline()
-                    .font(.title3)
-                    .fontWeight(.heavy)
-                    .foregroundStyle(.yellow)
-                    .padding(.top)
-                    .textCase(.uppercase)
-            }) {
-                ForEach(weeklyTasks, id: \.self, content: {
-                    taskName in
-                    Text(taskName)
-                })
+                Section(header: HStack(alignment: .bottom) {
+                    Text(Image(systemName: "calendar"))
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.yellow)
+                    
+                    Text("Monthly Tasks")
+                        .underline()
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(.yellow)
+                        .padding(.top)
+                        .textCase(.uppercase)
+                }) {
+                    ForEach(monthlyTasks, id: \.self, content: {
+                        taskName in
+                        NavigationLink(taskName, destination: Text(taskName))
+                    })
+                }
             }
-            
-            Section(header: HStack(alignment: .bottom) {
-                Text(Image(systemName: "calendar"))
-                    .font(.title3)
-                    .fontWeight(.heavy)
-                    .foregroundStyle(.yellow)
-                
-                Text("Monthly Tasks")
-                    .underline()
-                    .font(.title3)
-                    .fontWeight(.heavy)
-                    .foregroundStyle(.yellow)
-                    .padding(.top)
-                    .textCase(.uppercase)
-            }) {
-                ForEach(monthlyTasks, id: \.self, content: {
-                    taskName in
-                    Text(taskName)
-                })
-            }
+            .navigationTitle("Home")
         }
     }
 }
