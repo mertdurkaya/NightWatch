@@ -11,6 +11,8 @@
 		4EF7B2FD2B0C11610027DAA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B2FC2B0C11610027DAA5 /* ContentView.swift */; };
 		4EF7B2FF2B0C11630027DAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */; };
 		4EF7B3022B0C11630027DAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7B3012B0C11630027DAA5 /* Preview Assets.xcassets */; };
+		4EF7B30B2B0D6AE60027DAA5 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */; };
+		4EF7B30D2B0D720B0027DAA5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		4EF7B2FC2B0C11610027DAA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EF7B3012B0C11630027DAA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				4EF7B2FC2B0C11610027DAA5 /* ContentView.swift */,
 				4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */,
 				4EF7B3002B0C11630027DAA5 /* Preview Content */,
+				4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */,
+				4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */,
 			);
 			path = NightWatch;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF7B2FD2B0C11610027DAA5 /* ContentView.swift in Sources */,
+				4EF7B30D2B0D720B0027DAA5 /* HomeView.swift in Sources */,
 				4EF7B2FB2B0C11610027DAA5 /* NightWatchApp.swift in Sources */,
+				4EF7B30B2B0D6AE60027DAA5 /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
