@@ -7,87 +7,90 @@
 
 import SwiftUI
 
+let nightlyTasks = [
+    "Check all windows",
+    "Check all doors",
+    "Check safe",
+    "Check mailbox",
+    "Inspect security cameras",
+    "Clear ice from sidewalks",
+    "Document 'strange and unusual' occurrences"
+]
+
+let weeklyTasks = [
+    "Check inside all rooms",
+    "Walk the premieter of property"
+]
+
+let monthlyTasks = [
+    "Test security alarm",
+    "Test motion detection",
+    "Test smoke alarms"
+]
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    // MARK: Nigthly
-                    // TODO: Do not forget to make them seperate views
-                    // FIXME: It's not broken, only way of showing 'fixme'
-                    Group {
-                        HStack(alignment: .bottom) {
-                            Text(Image(systemName: "moon.stars"))
-                                .symbolRenderingMode(.multicolor)
-                                .font(.title3)
-                                .fontWeight(.heavy)
-                            
-                            Text("Nightly Tasks")
-                                .underline()
-                                .font(.title3)
-                                .fontWeight(.heavy)
-                                .foregroundStyle(.yellow)
-                                .padding(.top)
-                                .textCase(.uppercase)
-                        }
-                        .padding(.bottom)
-                    }
-                    Text("Check all windows ")
-                    Text("Check all doors")
-                    Text("Check safe")
-                    Text("Check mailbox")
-                    Text("Inspect security cameras")
-                    Text("Clear ice from sidewalks")
-                    Text("Document 'strange and unusual' occurrences")
-                    Divider()
-                    
-                    // MARK: Weekly
-                    Group {
-                        HStack(alignment: .bottom) {
-                            Text(Image(systemName: "sunset"))
-                                .font(.title3)
-                                .fontWeight(.heavy)
-                            
-                            Text("Weekly Tasks")
-                                .underline()
-                                .font(.title3)
-                                .fontWeight(.heavy)
-                                .foregroundStyle(.yellow)
-                                .padding(.top)
-                                .textCase(.uppercase)
-                        }
-                        .padding(.bottom)
-                    }
-                    Text("Check inside all rooms")
-                    Text("Walk the premieter of property")
-                    Divider()
-                    
-                    // MARK: Monthly
-                    Group {
-                        HStack(alignment: .bottom) {
-                            Text(Image(systemName: "calendar"))
-                                .font(.title3)
-                                .fontWeight(.heavy)
-                            
-                            Text("Monthly Tasks")
-                                .underline()
-                                .font(.title3)
-                                .fontWeight(.heavy)
-                                .foregroundStyle(.yellow)
-                                .padding(.top)
-                                .textCase(.uppercase)
-                        }
-                        .padding(.bottom)
-                        Text("Test security alarm")
-                        Text("Test motion detection")
-                        Text("Test smoke alarms")
-                    }
-                }
-                Spacer()
+        List {
+            Section(header: HStack(alignment: .bottom) {
+                Text(Image(systemName: "moon.stars"))
+                    .font(.title3)
+                    .fontWeight(.heavy)
+                    .foregroundStyle(.yellow)
+                
+                Text("Nightly Tasks")
+                    .underline()
+                    .font(.title3)
+                    .fontWeight(.heavy)
+                    .foregroundStyle(.yellow)
+                    .padding(.top)
+                    .textCase(.uppercase)
+            }) {
+                ForEach(nightlyTasks, id: \.self, content: {
+                    taskName in
+                    Text(taskName)
+                })
             }
-            .padding()
+            
+            Section(header: HStack(alignment: .bottom) {
+                Text(Image(systemName: "sunset"))
+                    .font(.title3)
+                    .fontWeight(.heavy)
+                    .foregroundStyle(.yellow)
+                
+                Text("Weekly Tasks")
+                    .underline()
+                    .font(.title3)
+                    .fontWeight(.heavy)
+                    .foregroundStyle(.yellow)
+                    .padding(.top)
+                    .textCase(.uppercase)
+            }) {
+                ForEach(weeklyTasks, id: \.self, content: {
+                    taskName in
+                    Text(taskName)
+                })
+            }
+            
+            Section(header: HStack(alignment: .bottom) {
+                Text(Image(systemName: "calendar"))
+                    .font(.title3)
+                    .fontWeight(.heavy)
+                    .foregroundStyle(.yellow)
+                
+                Text("Monthly Tasks")
+                    .underline()
+                    .font(.title3)
+                    .fontWeight(.heavy)
+                    .foregroundStyle(.yellow)
+                    .padding(.top)
+                    .textCase(.uppercase)
+            }) {
+                ForEach(monthlyTasks, id: \.self, content: {
+                    taskName in
+                    Text(taskName)
+                })
+            }
         }
-        Spacer()
     }
 }
 
