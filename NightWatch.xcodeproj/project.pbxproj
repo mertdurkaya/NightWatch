@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EE06D5B2B0E4D5800576415 /* NightWatchTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE06D5A2B0E4D5700576415 /* NightWatchTasks.swift */; };
 		4EF7B2FB2B0C11610027DAA5 /* NightWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B2FA2B0C11610027DAA5 /* NightWatchApp.swift */; };
-		4EF7B2FD2B0C11610027DAA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B2FC2B0C11610027DAA5 /* ContentView.swift */; };
 		4EF7B2FF2B0C11630027DAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */; };
 		4EF7B3022B0C11630027DAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7B3012B0C11630027DAA5 /* Preview Assets.xcassets */; };
 		4EF7B30B2B0D6AE60027DAA5 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */; };
-		4EF7B30D2B0D720B0027DAA5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */; };
+		4EF7B30D2B0D720B0027DAA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30C2B0D720B0027DAA5 /* ContentView.swift */; };
+		4EF7B30F2B0D7F6C0027DAA5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30E2B0D7F6C0027DAA5 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EE06D5A2B0E4D5700576415 /* NightWatchTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchTasks.swift; sourceTree = "<group>"; };
 		4EF7B2F72B0C11610027DAA5 /* NightWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF7B2FA2B0C11610027DAA5 /* NightWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchApp.swift; sourceTree = "<group>"; };
-		4EF7B2FC2B0C11610027DAA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EF7B3012B0C11630027DAA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4EF7B30C2B0D720B0027DAA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4EF7B30E2B0D7F6C0027DAA5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				4EF7B2FA2B0C11610027DAA5 /* NightWatchApp.swift */,
-				4EF7B2FC2B0C11610027DAA5 /* ContentView.swift */,
+				4EF7B30C2B0D720B0027DAA5 /* ContentView.swift */,
+				4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */,
+				4EF7B30E2B0D7F6C0027DAA5 /* Task.swift */,
+				4EE06D5A2B0E4D5700576415 /* NightWatchTasks.swift */,
 				4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */,
 				4EF7B3002B0C11630027DAA5 /* Preview Content */,
-				4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */,
-				4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */,
 			);
 			path = NightWatch;
 			sourceTree = "<group>";
@@ -143,10 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF7B2FD2B0C11610027DAA5 /* ContentView.swift in Sources */,
-				4EF7B30D2B0D720B0027DAA5 /* HomeView.swift in Sources */,
+				4EF7B30D2B0D720B0027DAA5 /* ContentView.swift in Sources */,
+				4EF7B30F2B0D7F6C0027DAA5 /* Task.swift in Sources */,
 				4EF7B2FB2B0C11610027DAA5 /* NightWatchApp.swift in Sources */,
 				4EF7B30B2B0D6AE60027DAA5 /* DetailsView.swift in Sources */,
+				4EE06D5B2B0E4D5800576415 /* NightWatchTasks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
