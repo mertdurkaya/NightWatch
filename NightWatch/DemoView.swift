@@ -8,32 +8,44 @@
 import SwiftUI
 
 struct DemoView: View {
-    @State var thetask = Task(name: "Check all windows",
+    @StateObject private var theTask = Task(name: "Check all windows",
                        isComplete: false, lastCompleted: nil)
-    @State var buttonTitle = "Mark Complete"
     
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: thetask.isComplete ? 
+                Image(systemName: theTask.isComplete ?
                       "checkmark.square" : "square")
-                Text(thetask.name)
+                Text(theTask.name)
             }
-            Button(action: {
-                thetask.isComplete.toggle()
-                if (thetask.isComplete) {
-                    buttonTitle = "Mark Uncomplete"
-                } else {
-                    buttonTitle = "Mark Complete"
-                }
-            }) {
-                Text(buttonTitle)
-                
-            }.padding(.top)
+            ControlPanel(theTask: self.theTask)
+            
         }
     }
 }
 
 #Preview {
     DemoView()
+}
+
+struct ControlPanel: View {
+    @ObservedObject var theTask: Task
+    
+    var body: some View {
+        if theTask.isComplete == false {
+            Button(action: {
+                theTask.isComplete = true
+            }) {
+                Text("Mark Complete")
+                
+            }.padding(.top)
+        } else {
+            Button(action: {
+                theTask.isComplete = false
+            }) {
+                Text("Reset")
+                
+            }.padding(.top)
+        }
+    }
 }
