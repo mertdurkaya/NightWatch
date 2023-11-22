@@ -16,10 +16,14 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
             DetailsView(taskName: "Test Task")
-                .badge("!")
                 .tabItem {
                     Label("Test", systemImage: "testtube.2")
             }
+            DemoView()
+                .badge("!")
+                .tabItem {
+                    Label("Demo", systemImage: "ev.plug.dc.chademo.fill")
+                }
         }
     }
 }

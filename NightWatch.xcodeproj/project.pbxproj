@@ -13,6 +13,8 @@
 		4EF7B3022B0C11630027DAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7B3012B0C11630027DAA5 /* Preview Assets.xcassets */; };
 		4EF7B30B2B0D6AE60027DAA5 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */; };
 		4EF7B30D2B0D720B0027DAA5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */; };
+		4EF7B30F2B0D7F6C0027DAA5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B30E2B0D7F6C0027DAA5 /* Task.swift */; };
+		4EF7B3112B0D81660027DAA5 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B3102B0D81660027DAA5 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		4EF7B3012B0C11630027DAA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4EF7B30E2B0D7F6C0027DAA5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		4EF7B3102B0D81660027DAA5 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				4EF7B3002B0C11630027DAA5 /* Preview Content */,
 				4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */,
 				4EF7B30C2B0D720B0027DAA5 /* HomeView.swift */,
+				4EF7B30E2B0D7F6C0027DAA5 /* Task.swift */,
+				4EF7B3102B0D81660027DAA5 /* DemoView.swift */,
 			);
 			path = NightWatch;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF7B2FD2B0C11610027DAA5 /* ContentView.swift in Sources */,
+				4EF7B3112B0D81660027DAA5 /* DemoView.swift in Sources */,
 				4EF7B30D2B0D720B0027DAA5 /* HomeView.swift in Sources */,
+				4EF7B30F2B0D7F6C0027DAA5 /* Task.swift in Sources */,
 				4EF7B2FB2B0C11610027DAA5 /* NightWatchApp.swift in Sources */,
 				4EF7B30B2B0D6AE60027DAA5 /* DetailsView.swift in Sources */,
 			);
