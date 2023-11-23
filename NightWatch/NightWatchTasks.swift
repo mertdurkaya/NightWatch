@@ -21,7 +21,7 @@ class NightWatchTasks: ObservableObject {
 
     @Published var weeklyTasks = [
         Task(name: "Check inside all rooms", isComplete: false, lastCompleted: nil),
-        Task(name: "Walk the premieter of property", isComplete: false, lastCompleted: nil)
+        Task(name: "Walk the perimeter of property", isComplete: false, lastCompleted: nil)
     ]
 
     @Published var monthlyTasks = [
