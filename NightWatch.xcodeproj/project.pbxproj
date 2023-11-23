@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2CAAB82B0FECA30011C9D7 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CAAB72B0FECA30011C9D7 /* TaskCardView.swift */; };
 		4EE06D5B2B0E4D5800576415 /* NightWatchTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE06D5A2B0E4D5700576415 /* NightWatchTasks.swift */; };
 		4EF7B2FB2B0C11610027DAA5 /* NightWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7B2FA2B0C11610027DAA5 /* NightWatchApp.swift */; };
 		4EF7B2FF2B0C11630027DAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E2CAAB62B0FE0EC0011C9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4E2CAAB72B0FECA30011C9D7 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
 		4EE06D5A2B0E4D5700576415 /* NightWatchTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchTasks.swift; sourceTree = "<group>"; };
 		4EF7B2F72B0C11610027DAA5 /* NightWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF7B2FA2B0C11610027DAA5 /* NightWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWatchApp.swift; sourceTree = "<group>"; };
@@ -57,10 +60,12 @@
 		4EF7B2F92B0C11610027DAA5 /* NightWatch */ = {
 			isa = PBXGroup;
 			children = (
+				4E2CAAB62B0FE0EC0011C9D7 /* Info.plist */,
 				4EF7B2FA2B0C11610027DAA5 /* NightWatchApp.swift */,
 				4EF7B30C2B0D720B0027DAA5 /* ContentView.swift */,
 				4EF7B30A2B0D6AE60027DAA5 /* DetailsView.swift */,
 				4EF7B30E2B0D7F6C0027DAA5 /* Task.swift */,
+				4E2CAAB72B0FECA30011C9D7 /* TaskCardView.swift */,
 				4EE06D5A2B0E4D5700576415 /* NightWatchTasks.swift */,
 				4EF7B2FE2B0C11630027DAA5 /* Assets.xcassets */,
 				4EF7B3002B0C11630027DAA5 /* Preview Content */,
@@ -147,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF7B30D2B0D720B0027DAA5 /* ContentView.swift in Sources */,
+				4E2CAAB82B0FECA30011C9D7 /* TaskCardView.swift in Sources */,
 				4EF7B30F2B0D7F6C0027DAA5 /* Task.swift in Sources */,
 				4EF7B2FB2B0C11610027DAA5 /* NightWatchApp.swift in Sources */,
 				4EF7B30B2B0D6AE60027DAA5 /* DetailsView.swift in Sources */,
@@ -287,6 +293,7 @@
 				DEVELOPMENT_TEAM = 385M435SA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NightWatch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +323,7 @@
 				DEVELOPMENT_TEAM = 385M435SA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NightWatch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
