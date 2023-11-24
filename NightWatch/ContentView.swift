@@ -7,9 +7,8 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
-    @ObservedObject var  nightWatchTasks: NightWatchTasks
+    @ObservedObject var nightWatchTasks: NightWatchTasks
     @State private var focusModeOn = false
     @State private var showAlert = false
     
