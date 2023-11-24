@@ -23,14 +23,13 @@ struct DetailsView: View {
             .foregroundColor(Color("AccentColor"))
             .shadow(radius: 10)
             Divider()
-            
             // MARK: Task Name
             TaskCardView(taskName: task.name)
             Spacer()
             if verticalSizeClass == .regular {
                 // MARK: Task Description
                 VStack {
-                    Text("asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd")
+                    Text("Placeholder Task Description")
                         .multilineTextAlignment(.center)
                         .font(.title3)
                         .foregroundStyle(Color("AccentColor"))
@@ -44,7 +43,6 @@ struct DetailsView: View {
             .buttonStyle(.borderedProminent)
         }
         .padding()
-        
     }
 }
 #Preview {
